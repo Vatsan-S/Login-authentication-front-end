@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-text-light: #fff;
+  --color-text-dark: #333333;
+  --color-accent: #e50914;
+  --color-bg-light: #f2f2f2;
+
+  --fs-wb-banner: 3rem;
+  --fs-wb-title1: 2rem;
+  --fs-wb-title: 1.5rem;
+  --fs-wb-body: 1.125rem;
+  --fs-wb-description: 0.8rem;
+
+  --fw-wb-bolder: 900;
+  --fw-wb-medium: 600;
+  --fw-wb-regular: 400;
+  --fw-wb-thin: 300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*----------------------- home page ------------------------- */
+
+.homeComponent {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a56dc29b-a0ec-4f6f-85fb-50df0680f80f/2f8ae902-8efe-49bb-9a91-51b6fcc8bf46/IN-en-20240617-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 0;
+}
+
+.registerButton {
+  width: 300px;
+  padding: 8px 24px;
+  background-color: var(--color-accent);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  color: var(--color-text-light);
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-size: var(--fs-wb-title);
+}
+
+.blackTint {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+}
+
+.homeTitle {
+  margin-bottom: 24px;
+  color: var(--color-text-light);
+  font-size: var(--fs-wb-banner);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: var(--fw-wb-bolder);
+}
+
+.homeDescription {
+  margin-bottom: 24px;
+  color: var(--color-text-light);
+  font-size: var(--fs-wb-title);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: var(--fw-wb-regular);
+}
+
+.homeLoginText {
+  margin-top: 1rem;
+  color: var(--color-text-light);
+  opacity: 0.8;
+  font-family: "Noto Sans", sans-serif;
+  font-size: var(--fs-wb-description);
+}
+
+/* --------------------- register page ----------------------- */
+
+.regContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.regContent {
+  max-width: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.regForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.regTitle {
+  font-family: "Noto Sans", sans-serif;
+  font-size: var(--fs-wb-title1);
+  font-weight: var(--fw-wb-medium);
+  color: var(--color-text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.regDescription {
+  font-family: "Noto Sans", sans-serif;
+  font-size: var(--fs-wb-body);
+  font-weight: var(--fw-wb-thin);
+  max-width: 70%;
+  line-height: 150%;
+  margin-bottom: 1rem;
+  color: var(--color-text-dark);
+}
+
+.regForm input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.regForm button {
+  padding: 8px 24px;
+  background-color: var(--color-accent);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  color: var(--color-text-light);
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-size: var(--fs-wb-title);
+}
+
+/*------------------------ login page -------------------------- */
+
+.loginPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a56dc29b-a0ec-4f6f-85fb-50df0680f80f/2f8ae902-8efe-49bb-9a91-51b6fcc8bf46/IN-en-20240617-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+/* black tint css is on home page css  */
+
+.loginContent {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  padding: 3rem;
+  border-radius: 8px;
+
+  /* background-color: black; */
+  position: relative;
+  overflow: hidden;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginTitle {
+  margin-bottom: 24px;
+  color: var(--color-text-light);
+  font-size: var(--fs-wb-title1);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: var(--fw-wb-medium);
+}
+
+.loginTint {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  padding: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  opacity: 0.8;
+}
+
+.loginForm input {
+  width: 300px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid grey;
+  outline: none;
+  background-color: var(--color-text-dark);
+  opacity: 0.7;
+  color: var(--color-text-light);
+}
+
+.loginForm button {
+  width: 300px;
+  padding: 8px 24px;
+  background-color: var(--color-accent);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  color: var(--color-text-light);
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-size: var(--fs-wb-body);
+  margin-bottom: 1rem;
+}
+.errorMessage{
+  color:var(--color-accent  );
+  font-family: "Noto Sans", sans-serif;
+  font-size: var(--fs-wb-description);
+  font-weight: var(--fw-wb-medium);
+  max-width: 80%;
+  line-height: 150%;
+  margin-bottom: 1rem;
+}
+/*--------------------------------------------- forgot password --------------------------------------------- */
+
+.forgotPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a56dc29b-a0ec-4f6f-85fb-50df0680f80f/2f8ae902-8efe-49bb-9a91-51b6fcc8bf46/IN-en-20240617-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+.forgotContent {
+  width: 400px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  padding: 3rem;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.forgotTitle {
+  width: 300px;
+  margin-bottom: 24px;
+  color: var(--color-text-light);
+  font-size: var(--fs-wb-title1);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: var(--fw-wb-medium);
+}
+.forgotDescription {
+  font-family: "Noto Sans", sans-serif;
+  font-size: var(--fs-wb-body);
+  font-weight: var(--fw-wb-thin);
+  max-width: 80%;
+  line-height: 150%;
+  margin-bottom: 1rem;
+  color: var(--color-text-dark);
+}
+
+.forgotForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgotForm input {
+  width: 300px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid grey;
+  outline: none;
+  background-color: var(--color-text-dark);
+  opacity: 0.7;
+  color: var(--color-text-light);
+}
+
+.forgotForm button {
+  width: 300px;
+  padding: 8px 24px;
+  background-color: var(--color-accent);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  color: var(--color-text-light);
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-size: var(--fs-wb-body);
+  margin-bottom: 1rem;
+}
+
+/* ----------------------------------------------change password --------------------------------------------- */
+
+.resetPage {
+  background-color: var(--color-bg-light);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetTitle {
+  width: 300px;
+  margin-bottom: 24px;
+  color: var(--color-text-dark);
+  font-size: var(--fs-wb-title1);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: var(--fw-wb-medium);
+}
+
+.resetDescription{
+    font-family: "Noto Sans", sans-serif;
+    font-size: var(--fs-wb-body);
+    font-weight: var(--fw-wb-thin);
+    max-width: 80%;
+    line-height: 150%;
+    margin-bottom: 1rem;
+    color: var(--color-text-dark);
+}
+
+.resetForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.resetForm input{
+    width: 300px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid grey;
+    outline: none;
+    background-color: var(--color-text-light);
+    opacity: 0.8;
+    color: var(--color-text-dark);
+}
+
+.resetForm button{
+    width: 300px;
+  padding: 8px 24px;
+  background-color: var(--color-accent);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  color: var(--color-text-light);
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-size: var(--fs-wb-body);
+  margin-bottom: 1rem;
+}
+button{
+  transition: 0.2s all;
+  transform: scale(0.98)
+}
+button:active {
+  background-color: #C90812;
+}
