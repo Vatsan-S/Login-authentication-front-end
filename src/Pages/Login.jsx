@@ -15,7 +15,7 @@ const Login = () => {
       password: passwd,
     };
     await axios
-      .post("http://localhost:5000/api/user/loginuser", payload)
+      .post("https://login-authentication-backend-1.onrender.com/api/user/loginuser", payload)
       .then((res) => {
         setData1(res.data)
         setMsg(res.message)
