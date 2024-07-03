@@ -30,7 +30,7 @@ const ResetPassword = () => {
     setUserEmail(email);
     console.log("payload", payload);
     await axios
-      .post("http://localhost:5000/api/user/reset_password", payload)
+      .post("https://login-authentication-backend-1.onrender.com/api/user/reset_password", payload)
       .then((res) => {
         setPssdString(res.data.result.passwordresetstring);
       });

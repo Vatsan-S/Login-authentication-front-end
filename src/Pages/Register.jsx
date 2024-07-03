@@ -19,7 +19,7 @@ const Register = () => {
     };
     console.log(payload)
     await axios
-      .post("http://localhost:5000/api/user/registeruser", payload)
+      .post("https://login-authentication-backend-1.onrender.com/api/user/registeruser", payload)
       .then((res) => {
         setMsg(res.data.message);
         console.log(msg)
