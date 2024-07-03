@@ -30,7 +30,7 @@ const ResetPassword = () => {
     setUserEmail(email);
     console.log("payload", payload);
     await axios
-      .post("https://login-authentication-backend-1.onrender.com/api/user/reset_password", payload)
+      .post("https://login-authentication-backend-kbk8.onrender.com/api/user/reset_password", payload)
       .then((res) => {
         setPssdString(res.data.result.passwordresetstring);
       });
@@ -53,7 +53,7 @@ const ResetPassword = () => {
         newPassword: newPasswd,
       };
       await axios
-        .post("http://localhost:5000/api/user/update_password", payload)
+        .post("https://login-authentication-backend-kbk8.onrender.com/api/user/update_password", payload)
         .then((res) => {
           console.log("response", res.data.message);
         });

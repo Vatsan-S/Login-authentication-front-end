@@ -14,7 +14,7 @@ const ForgotPassword = () => {
       email: userEmail,
     };
     await axios
-      .post("https://login-authentication-backend-1.onrender.com/api/user/forgot_password", payload)
+      .post("https://login-authentication-backend-kbk8.onrender.com/api/user/forgot_password", payload)
       .then((res) => {
         console.log(res.data.response);
         setUserStatus(true);
